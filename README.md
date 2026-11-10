@@ -52,7 +52,7 @@ Everything is contained in a single `.ps1` file. No external executables, no dep
 ### 1. Clone the repository
 
 ```powershell
-git clone https://github.com/<your-user>/Kali-Windows.git
+git clone https://github.com/yken-neky/kali-windows-term
 cd Kali-Windows
 ```
 
@@ -90,10 +90,10 @@ if (!(Test-Path -Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force
 
 ### 5. Copy the profile into place
 
-The full profile lives in [`src/Kali-Windows-Profile.ps1`](src/Kali-Windows-Profile.ps1). Copy it over your `$PROFILE`:
+The full profile lives in [`src/Microsoft.PowerShell_profile.ps1`](src/Microsoft.PowerShell_profile.ps1). Copy it over your `$PROFILE`:
 
 ```powershell
-Copy-Item -Path ".\src\Kali-Windows-Profile.ps1" -Destination $PROFILE -Force
+Copy-Item -Path ".\src\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE -Force
 ```
 
 > **⚠️ Encoding matters.** The file contains Unicode characters (Braille patterns, block elements, `•`). It **must** be saved as **UTF-8 with BOM**. Otherwise Windows PowerShell 5.1 will render them as `â–ˆâ–„â–€` mojibake. The file shipped in this repo already has the BOM; only worry about this if you edit it yourself.
@@ -135,7 +135,7 @@ $artStops = @(
 )
 ```
 
-To use a different palette (for example, the "custom" palette from the [abc-logo-generator](https://github.com/...)) just swap the stops.
+To use a different palette (for example, the "custom" palette from the `abc-logo-generator` just swap the stops.
 
 ### Add or remove info rows
 
@@ -221,7 +221,7 @@ Apache 2.0 — do whatever you want, attribution is nice but not required. See [
 
 ## Acknowledgements
 
-- The color palette and "ice" gradient were tuned with [abc-logo-generator](https://github.com/...) — thanks for the inspiration.
+- The color palette and "ice" gradient were tuned with `abc-logo-generator` — thanks for the inspiration.
 - The ASCII dragon was drawn by hand and rendered with Braille patterns.
 - Inspired, of course, by [Kali Linux](https://www.kali.org/) and the entire offensive security community.
 ```
