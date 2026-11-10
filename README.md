@@ -53,7 +53,7 @@ Everything is contained in a single `.ps1` file. No external executables, no dep
 
 ```powershell
 git clone https://github.com/yken-neky/kali-windows-term
-cd Kali-Windows
+cd kali-windows-term
 ```
 
 ### 2. (Windows PowerShell 5.1 only) Upgrade `PSReadLine`
